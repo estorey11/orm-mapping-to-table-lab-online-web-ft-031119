@@ -12,12 +12,14 @@ class Student
   end
   
   def self.create_table
-    sql= <<-SQL CREATE TABLE cats (
+    sql= <<-SQL 
+    CREATE TABLE cats (
     id INTEGER PRIMARY KEY,
     name TEXT,
     age INTEGER,
     breed TEXT
-);"
+    );
+    SQL
   end
   
 end
