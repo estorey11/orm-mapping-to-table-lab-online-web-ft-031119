@@ -13,13 +13,14 @@ class Student
   
   def self.create_table
     sql= <<-SQL 
-    CREATE TABLE cats (
+    CREATE TABLE students (
     id INTEGER PRIMARY KEY,
     name TEXT,
-    age INTEGER,
-    breed TEXT
+    grade INTEGER,
     );
     SQL
+    
+    DB[:conn]=
   end
   
 end
